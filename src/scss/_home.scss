@@ -1,0 +1,40 @@
+.home {
+  background: linear-gradient(to bottom, #f8cf04 150px, #55559a00 0%);
+  min-height: 85vh;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  &__top-nav {
+    border-bottom: 1px solid rgb(156, 156, 156);
+  }
+  &__main {
+    @include container display: grid;
+    grid-template-columns: 26% 74%;
+    &--left {
+      display: grid;
+      grid-template-rows: 5rem 1fr;
+      &__logo {
+        width: 160px;
+        object-fit: contain;
+        height: 86px;
+        padding: 4px;
+      }
+    }
+    &--right {
+      display: grid;
+      grid-template-rows: 5rem 3rem 1fr;
+      &__info {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        align-items: center;
+        &--search {
+        }
+        &--contact {
+          text-align: end;
+          &-number {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

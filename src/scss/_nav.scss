@@ -1,0 +1,22 @@
+.nav {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: center;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    &--item {
+      font-weight: 600;
+      font-size: 13px;
+      color: #373535;
+      font-family: sans-serif;
+    }
+  }
+  &__icons {
+    text-align: end;
+    &--item {
+      margin: 0 5px;
+      font-size: 20px;
+    }
+  }
+}

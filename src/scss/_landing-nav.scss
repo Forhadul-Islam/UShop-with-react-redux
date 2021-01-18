@@ -1,0 +1,18 @@
+@import "./variables";
+.landing-nav {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  &__set {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  &__set-item {
+    padding-right: 1rem;
+    color: #0f0f1d;
+    :last-child {
+      padding-right: 0;
+    }
+  }
+}

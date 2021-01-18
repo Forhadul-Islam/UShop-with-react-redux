@@ -1,0 +1,33 @@
+@import "./variables";
+
+.slider-item {
+  position: relative;
+  display: flex;
+  &__image {
+  }
+  &__info {
+    width: 60%;
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr;
+    z-index: 10;
+    &--title {
+      font-size: 29px;
+      font-weight: 600;
+      color: rgb(247, 231, 202);
+      letter-spacing: 2px;
+    }
+    &--text {
+      color: white;
+    }
+  }
+  &__cover {
+    position: absolute;
+    height: 100%;
+    background-image: linear-gradient(to right, #0c0c0cbf 30%, transparent);
+    width: 100%;
+    z-index: 5;
+  }
+}

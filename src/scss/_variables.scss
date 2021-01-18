@@ -1,0 +1,32 @@
+//container style
+@mixin container {
+  width: 65vw;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+//Media query break points
+
+$screen-sm-max: 596px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+
+//Mixin
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
