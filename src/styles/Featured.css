@@ -1,0 +1,8 @@
+.featured {
+  width: 62vw;
+  margin: 0 auto;
+  padding-top: 2px;
+  margin-top: 20px; }
+  .featured__header {
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr; }

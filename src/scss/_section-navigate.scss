@@ -1,0 +1,15 @@
+@import './variables';
+
+.section-navigate  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    &__icon {
+        border: 1px solid gray;
+        cursor: pointer;
+        background-color: lightgray;
+        color: black;
+        font-size: 16px;
+    }
+}

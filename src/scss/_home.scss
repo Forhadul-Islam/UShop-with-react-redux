@@ -1,13 +1,14 @@
 .home {
   background: linear-gradient(to bottom, #f8cf04 150px, #55559a00 0%);
-  min-height: 85vh;
+  min-height: 77vh;
   display: grid;
   grid-template-rows: 2rem 1fr;
   &__top-nav {
     border-bottom: 1px solid rgb(156, 156, 156);
   }
   &__main {
-    @include container display: grid;
+    @include container; 
+    display: grid;
     grid-template-columns: 26% 74%;
     &--left {
       display: grid;
@@ -37,4 +38,8 @@
       }
     }
   }
+}
+
+.ant-carousel .slick-list .slick-slide > div > div {
+  height: 350px;
 }

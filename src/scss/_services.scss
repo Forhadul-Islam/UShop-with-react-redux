@@ -1,0 +1,41 @@
+@import './variables';
+
+.services {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height: 72px;
+    margin-top: 10px;
+    @include sm {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15px;
+    }
+    &-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border: 1px solid goldenrod;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        font-family: sans-serif;
+        @include sm {
+            height: 93px;
+        }
+        &__icon {
+
+        }
+        &__content{
+            &--title{
+                font-weight: 600;
+                font-size: 17px;
+            }
+            &--text {
+                font-size: 9px;
+                
+            }
+        }
+    }
+    
+}

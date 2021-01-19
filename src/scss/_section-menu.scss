@@ -1,0 +1,22 @@
+@import './variables';
+
+.section-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    margin: 0;
+    &li {
+        padding: 0 1px;
+    }
+    &--item {
+        font-size: 13px;
+        color: rgb(59, 58, 58);
+        font-weight: 600;
+    }
+    &--selected-item {
+        border: 1px solid goldenrod;
+        border-radius: 5px;
+        padding: 1px;
+    }
+}

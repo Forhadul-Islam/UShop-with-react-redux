@@ -1,0 +1,16 @@
+@import  './variables';
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: #505050;
+        width: 75%;
+        margin-left: 15px;
+        top: 50%;
+        } 
+}

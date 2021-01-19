@@ -1,8 +1,11 @@
 //container style
 @mixin container {
-  width: 65vw;
+  width: 62vw;
   margin: 0 auto;
   padding-top: 2px;
+  @include sm {
+    width: 85vw;
+  }
 }
 
 //Media query break points

@@ -12,7 +12,7 @@ const Slider = () => {
       };
     return (
         <div>
-            <Carousel autoplay>
+            <Carousel dots={true} dotPosition="bottom" autoplay>
                 {/* <div> */}
                 {/* <h3 style={contentStyle}></h3> */}
                 <SliderItem />
