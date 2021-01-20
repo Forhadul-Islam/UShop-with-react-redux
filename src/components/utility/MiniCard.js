@@ -1,8 +1,9 @@
 import { Rate, Tag } from 'antd';
 import React from 'react';
-import product3 from '../../images/new-arrival/product-3.png';
 
-const MiniCard = ({title, image, price, rating, review, sale}) => {
+const MiniCard = ({title, image, price, rating, review, sale, tag}) => {
+
+    const tagColor = tag === 'new' ? "red" : 'green'
 
     const productPrice = sale ? 
     <div className="mini-card__info--sale">
@@ -20,6 +21,7 @@ const MiniCard = ({title, image, price, rating, review, sale}) => {
         <div className="mini-card">
             <div className="mini-card__left">
             {sale && <Tag color="#f50">sale</Tag>}
+            {tag && <Tag color={tagColor}>{tag}</Tag>}
              <img className="mini-card__left--image" src={image} alt={title} />
             </div>
             <div className="mini-card__info">

@@ -6,6 +6,7 @@
     // width: 365px;
     border: 1px solid lightgray;
     font-family: sans-serif;
+    min-height: 120px;
     &__left {
         padding: 5px;
         &--image {
@@ -20,7 +21,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         &--title {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
         }
         &--rating {
