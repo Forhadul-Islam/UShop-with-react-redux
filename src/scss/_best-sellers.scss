@@ -2,10 +2,15 @@
 
 .best-sellers {
     @include container;
+    margin-bottom: 23px;
     &__main {
         display: grid;
         grid-template-columns: 2fr 3.5fr;
         column-gap: 10px;
+        @include sm {
+            row-gap: 12px;
+            grid-template-columns: 1fr;
+        }
 
         &--left {
             &__bottom {
@@ -13,6 +18,9 @@
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: 55px;
+                @include sm {
+                    display: none;
+                }
                 &--options {
                     display: flex;
                     justify-content: center;
@@ -29,6 +37,9 @@
             grid-template-columns: 1fr 1fr 1fr;
             row-gap: 10px;
             column-gap: 10px;
+            @include sm {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }

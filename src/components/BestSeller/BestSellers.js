@@ -7,6 +7,7 @@ import product10 from '../../images/best-sellers/product-10.png'
 import product11 from '../../images/best-sellers/product-11.png'
 import product12 from '../../images/best-sellers/product-12.png'
 import product13 from '../../images/best-sellers/product-13.png'
+import category2 from '../../images/best-sellers/category-2.png'
 import Button from '../utility/Button'
 import { AiOutlineProject, AiOutlineHeart } from 'react-icons/ai';
 
@@ -22,7 +23,7 @@ const BestSellers = () => {
                             price="259.00"
                             review="8"
                             rating ="3"
-                            image={product8}
+                            image={category2}
                             width="400"
                         >
                             <div className="best-sellers__main--left__bottom">

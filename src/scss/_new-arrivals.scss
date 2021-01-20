@@ -1,0 +1,20 @@
+@import './variables';
+
+.new-arrival {
+    @include container;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__header { 
+        display: grid;
+        grid-template-columns: 4.5fr 2fr .5fr;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+    &__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 8px;
+        column-gap: 8px;
+    }
+}
