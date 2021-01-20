@@ -20,7 +20,7 @@ const MiniCard = ({title, image, price, rating, review, sale}) => {
         <div className="mini-card">
             <div className="mini-card__left">
             {sale && <Tag color="#f50">sale</Tag>}
-             <img className="mini-card__left--image" src={product3} alt={title} />
+             <img className="mini-card__left--image" src={image} alt={title} />
             </div>
             <div className="mini-card__info">
                 <div className="mini-card__info--title">
