@@ -1,14 +1,15 @@
 import React from 'react';
-import SectionTitle from '../utility/SectionTitle';
+import { AiOutlineHeart, AiOutlineProject } from 'react-icons/ai';
+import category2 from '../../images/best-sellers/category-2.png';
+import product10 from '../../images/best-sellers/product-10.png';
+import product11 from '../../images/best-sellers/product-11.png';
+import product12 from '../../images/best-sellers/product-12.png';
+import product13 from '../../images/best-sellers/product-13.png';
+import product8 from '../../images/best-sellers/product-8.png';
+import product9 from '../../images/best-sellers/product-9.png';
+import Button from '../utility/Button';
 import Card from '../utility/Card';
-import product8 from '../../images/best-sellers/product-8.png'
-import product9 from '../../images/best-sellers/product-9.png'
-import product10 from '../../images/best-sellers/product-10.png'
-import product11 from '../../images/best-sellers/product-11.png'
-import product12 from '../../images/best-sellers/product-12.png'
-import product13 from '../../images/best-sellers/product-13.png'
-import Button from '../utility/Button'
-import { AiOutlineProject, AiOutlineHeart } from 'react-icons/ai';
+import SectionTitle from '../utility/SectionTitle';
 
 
 const BestSellers = () => {
@@ -22,7 +23,7 @@ const BestSellers = () => {
                             price="259.00"
                             review="8"
                             rating ="3"
-                            image={product8}
+                            image={category2}
                             width="400"
                         >
                             <div className="best-sellers__main--left__bottom">

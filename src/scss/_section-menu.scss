@@ -13,6 +13,9 @@
         font-size: 13px;
         color: rgb(59, 58, 58);
         font-weight: 600;
+        @include sm {
+            font-size: 16px;
+        }
     }
     &--selected-item {
         border: 1px solid goldenrod;

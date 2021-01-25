@@ -13,6 +13,13 @@
     display: grid;
     grid-template-rows: 3fr 2fr 2fr;
     z-index: 10;
+    @include sm {
+      width: 85%;
+    left: 8%;
+    top: 16%;
+    align-items: center;
+    justify-items: center;
+    }
     &--title {
       font-size: 29px;
       font-weight: 600;

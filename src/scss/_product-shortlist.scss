@@ -1,0 +1,15 @@
+@import './variables';
+
+.product-shortlist {
+    @include container;
+    @include sm {
+        display: none;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 18px;
+    &-item {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,6 +1,9 @@
 @import "./variables";
 .landing-nav {
   @include container;
+  @include sm {
+    display: none
+  }
   display: flex;
   justify-content: space-between;
   &__set {
@@ -11,7 +14,7 @@
   &__set-item {
     padding-right: 1rem;
     color: #0f0f1d;
-    :last-child {
+    &:last-child {
       padding-right: 0;
     }
   }
